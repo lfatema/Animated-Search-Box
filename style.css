@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #30356e;
+  }
+
+  .searchBox {
+    position: relative;
+    width:60px;
+    height:60px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.5s;
+    overflow: hidden;
+    border-radius: 5px;;
+  }
+
+  .searchBox.active {
+    width: 360px;
+  }
+
+  .searchBox .search {
+    position: relative;
+    min-width:60px;
+    height:60px;
+    background: #fff;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  .searchBox .search span {
+    font-size:1.8rem;
+  }
+  .searchBox .close {
+    position: relative;
+    width:60px;
+    height:60px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 1rem;
+    cursor: pointer;
+    scale:0;
+    transition: 0.5s;
+  }
+
+  .searchBox .close span {
+    font-size:1.5rem;
+  }
+
+  .searchBox.active .close {
+    scale: 1;
+    transition-delay: 0.5s;
+  }
+
+  .searchBox .searchInput {
+    display:flex;
+    /* position: relative; */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .searchBox .searchInput input {
+    height:40px;
+    width:250px;
+    border:none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+
+  }
